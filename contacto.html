@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto-SimbadTours</title>
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- FONT Bebas Neue-->
@@ -23,62 +23,68 @@
 <body>
     <header class="presentacion">
         <div class="container">
-            <nav class="nav-main">
+            <nav class="nav-main" id="menu">
                 <img src="img/Icono Simbad Tours.png" alt="SimbadTours LOGO" class="nav-logo">
                 <ul class="nav-menu">
                     <li>
-                        <a href="#">INICIO</a>
+                        <a href="index.html">INICIO</a>
                     </li>
                     <li>
-                        <a href="#">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="#">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="#">DESTINOS</a>
-                    </li>
-                    <li>
-                        <a href="#">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="#">COTIZAR</a>
-                    </li>
+                       <a href="nosotros.html">NOSOTROS</a>
+                   </li>
+                   <li>
+                       <a href="contacto.html">CONTACTO</a>
+                   </li>
+                   <li>
+                       <a href="destinos.html">DESTINOS</a>
+                   </li>
+                   <li>
+                       <a href="">SERVICIOS</a>
+                       <ul>
+                           <li><a href="">Renta de autos</a></li>
+                           <li><a href="">Hotel</a></li>
+                           <li><a href="">Paquetes Turísticos</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">COTIZAR</a>
+                   </li>
                 </ul>
-                <img src="img/estados-unidos.png" alt="Idioma Ingles" class="nav-ingles">
-                <img src="img/espana.png" alt="Idioma Español" class="nav-español">
+                <a href="#"><img src="img/estados-unidos.png" alt="Idioma Ingles" class="nav-ingles"></a>
+                <a href="#"><img src="img/espana.png" alt="Idioma Español" class="nav-español"></a>
                 <ul class="nav-menu-right">
                     <li>
-                        <a href="#">CREAR CUENTA</a>
+                        <a href="#miModal">CREAR CUENTA</a>
                     </li>
                     <li>
                         <a href="#">MI CUENTA <i class="fas fa-user"></i> </a>
                     </li>
                 </ul>
             </nav>
-            <h6>CONTÁCTANOS</h6>
-        </div>
-
-        
-
-        <div class="contenido">
-            <section class="form-register">
-                <h4>ESCRÍBENOS</h4>
-                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
-                <input class="controls" type="email" name="correo" id="correo" placeholder="Dirección de correo">
-                <input class="controls" type="text" name="comentario" id="comentario" placeholder="Comentario">
-
-                <input class="botons" type="submit" value="CONTACTAR AHORA">
-            </section>
-
-            <section class="cont">
-                <h5>Disponibles de 8am a 5pm</h5>
-                <p><i class="fas fa-phone"></i> +505 2224-3771</p>
-                <p><i class="fas fa-location-dot"></i> Camino de Oriente</p>
-                <p><i class="fas fa-envelope"></i>  info@simbadtours.com</p>
+            <hr noshade color="#232b2d">
+            <section class="presentacion-text">
+                <h2 class="pt2">Contáctanos</h2>
             </section>
         </div>
     </header>
+
+    <div class="contenido">
+        <section class="form-register">
+            <h4>ESCRÍBENOS</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Dirección de correo">
+            <input class="controls" type="text" name="comentario" id="comentario" placeholder="Comentario">
+
+            <input class="botons" type="submit" value="CONTACTAR AHORA">
+        </section>
+
+        <section class="cont">
+            <h5>Disponibles de 8am a 5pm</h5>
+            <p><i class="fas fa-phone"></i> +505 2224-3771</p>
+            <p><i class="fas fa-location-dot"></i> Camino de Oriente</p>
+            <p><i class="fas fa-envelope"></i>  info@simbadtours.com</p>
+        </section>
+    </div>
 
     <footer class="footer">
         <div class="informacion">

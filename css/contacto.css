@@ -1,9 +1,12 @@
-﻿* {
+﻿*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root{
+    --color-links: #0077DC;
+}
 
 h3 {
     font-size: 24px;
@@ -25,11 +28,8 @@ ul {
     list-style: none;
 }
 
-
 .container {
-    background: url(/img/header6.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
+    width: 98%;
     margin: auto;
 }
 
@@ -60,18 +60,49 @@ ul {
     display: flex;
 }
 
-    .nav-main ul li {
-        padding: 10px;
-    }
+.nav-main ul li a{
+    padding: 10px;
+    display: block;
+}
 
-        .nav-main ul li a:hover {
-            border-bottom: 2px solid #000000;
-        }
+.nav-main ul li a:hover {
+    background-color: #232b2d;
+    color: var(--color-links);
+}
 
-    .nav-main ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
+.nav-main ul li ul {
+    display: none;
+}
+.nav-main ul li a:hover + ul, .nav-main ul li ul:hover {
+    display: block;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Slider */
+.presentacion {
+    height: 20vh;
+    background-image: url(/img/header6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center 25%;
+}
+
+.presentacion-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.pt2 {
+    font-size: 30px;
+    color: #e3e3e3;
+}
 
 h6 {
     font-size: 34px;
