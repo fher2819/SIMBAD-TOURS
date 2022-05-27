@@ -117,7 +117,7 @@ h6 {
 }
 
 .form-register {
-    width: 400px;
+    width: 600px;
     /*background: #135994;*/
     padding: 30px;
     margin: auto;
@@ -165,14 +165,20 @@ h6 {
     }
 
 .form-register .botons {
-    width: 60%;
+    width: 300px;
     background: #ff6a00;
     border: none;
     padding: 10px;
     color: white;
-    margin: 16px 0;
+    margin: 16px 115px;
     font-size: 16px;
     border-radius: 25px;
+}
+
+.form-register .botons:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #000000;
+    cursor: pointer;
 }
 
 .form-register {
@@ -200,9 +206,15 @@ h6 {
 }
 
 .cont h5 {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.cont p {
+    color: #062B6B;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 
