@@ -189,6 +189,16 @@ ul {
     color: var(--color-links);
 }
 
+.card {
+    transition: all 0.3s ease-out;
+}
+
+.filter {
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
 /*Footer*/
 footer {
     width: 100%;

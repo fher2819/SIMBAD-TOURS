@@ -101,26 +101,26 @@ ul {
     background-size: cover;
     background-position: center center;
 
-    animation: slider 28s linear infinite;
-    -moz-animation: slider 28s linear infinite;
-    -ms-animation: slider 28s linear infinite;
-    -o-animation: slider 28s linear infinite;
-    -webkit-animation: slider 28s linear infinite;
+    animation: slider 20s linear infinite;
+    -moz-animation: slider 20s linear infinite;
+    -ms-animation: slider 20s linear infinite;
+    -o-animation: slider 20s linear infinite;
+    -webkit-animation: slider 20s linear infinite;
 }
 
 .slider .img1 {
     background-image: url(/img/fondoS1.jpg);
-    animation-delay: 7s;
+    animation-delay: 5s;
 }
 
 .slider .img2 {
     background-image: url(/img/fondoS2.jpg);
-    animation-delay: 14s;
+    animation-delay: 10s;
 }
 
 .slider .img3 {
     background-image: url(/img/fondoS3.jpg);
-    animation-delay: 21s;
+    animation-delay: 15s;
 }
 
 @keyframes slider {
