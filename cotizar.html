@@ -60,37 +60,67 @@
         </div>
     </header>
 
-    <form action="" class="form">
-        <div class="conteiner">
-            <label for="nombres">Nombres:</label>
-            <input type="text" class="control" name="nombres" id="nombres">
-            <label for="telefono">Teléfono:</label>
-            <input type="text" class="control" name="telefono" id="telefono">
-            <label for="correo">Dirección de correo:</label>
-            <input type="email" class="control" name="correo" id="correo">
-            <label for="destino">Destino:</label>
-            <select class="control" name="destino" id="destino">
-                <option value="" selected></option>
+    <div class="content_form">
+
+        <form action="" class="form">
+
+            <p>
+                <label for="nombres">Nombres:</label>
+                <input type="text" class="control" name="nombres" id="nombres">
+            </p>
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" class="control" name="telefono" id="telefono">
+            </p>
+            <p class="block">
+                <label for="correo">Dirección de correo:</label>
+                <input type="email" class="control" name="correo" id="correo">
+            </p>
+            <p>
+                <label for="destino">Destino:</label>
+                <select class="control" name="destino" id="destino">
+                    <option value="" selected></option>
                     <option value="">Granada</option>
                     <option value="">León</option>
                     <option value="">Masaya</option>
-            </select>
-            <label for="paquete">Tipo de paquete:</label>
-            <select class="control" name="paquete" id="paquete">
-                <option value="" selected>Destino</option>
+                </select>
+            </p>
+            <p>
+                <label for="paquete">Tipo de paquete:</label>
+                <select class="control" name="paquete" id="paquete">
+                    <option value="" selected>Destino</option>
                     <option value="">Destino con vehículo</option>
                     <option value="">Destino con hotel</option>
                     <option value="">Destino con vehículo y hotel</option>
-            </select>
-            <label for="fecha_in">Fecha de ingreso:</label>
-            <input type="date" class="control" name="fecha_in" id="fecha_in">
-            <label for="fecha_sal">Fecha de salida:</label>
-            <input type="date" class="control" name="fecha_sal" id="fecha_sal">
-            <label for="comentario">Comentario:</label>
-            <textarea class="coment" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </select>
+            </p>
+            <p>
+                <label for="modelo">Modelo de vehículo:</label>
+                <select class="control" name="modelo" id="modelo"></select>
+            </p>
+            <p>
+                <label for="habitacion">Tipo de habitación:</label>
+                <select class="control" name="habitacion" id="habitacion"></select>
+            </p>
+            <p>
+                <label for="fecha_in">Fecha de ingreso:</label>
+                <input type="date" class="control" name="fecha_in" id="fecha_in">
+            </p>
+            <p>
+                <label for="fecha_sal">Fecha de salida:</label>
+                <input type="date" class="control" name="fecha_sal" id="fecha_sal">
+            </p>
+            <p class="block">
+                <label for="comentario">Comentario:</label>
+                <textarea class="coment" name="comentario" id="comentario" rows="10"></textarea>
+            </p>
+            <p class="block">
+                <button>Enviar</button>
+            </p>
 
-        </div>
-    </form>
+        </form>
+
+    </div>
 
     <footer class="footer">
         <iframe src="footer.html" frameborder="0"></iframe>
