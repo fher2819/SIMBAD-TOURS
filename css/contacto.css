@@ -71,6 +71,7 @@ ul {
 }
 
 .nav-main ul li ul {
+    position: absolute;
     display: none;
 }
 .nav-main ul li a:hover + ul, .nav-main ul li ul:hover {
@@ -282,4 +283,85 @@ ul {
     font-size: 14px;
     margin-left: 40px;
     margin-top: 20px;
+}
+
+/*Modal */
+
+.contentModal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 500px;
+    background: #232b2d;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    text-align: center;
+}
+
+.modalCamera {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#modalCamera:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contentModal a , .contentModal button {
+    
+    padding: .7em;
+    font-family: 'Calibrí';
+    font-size: 25px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid var(--color-links);
+}
+
+.contentModal a , .contentModal button {
+    background: #042C6E;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contentModal button:hover{
+    cursor: pointer;
+}
+
+.contentModal .containerBtn{
+    margin-top: 25px;
+}
+
+#canvasElement{
+    width: 350px;
+    height: 250px;
+}
+
+.containerCanvas{
+    display: none;
+}
+
+.containerCanvasShow{
+    display: block;
+    
+    width: 350px;
+    height: 250px;
+}
+
+
+.divImage{
+    margin:30px
 }

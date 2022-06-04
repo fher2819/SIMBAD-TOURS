@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -87,12 +85,12 @@ ul {
 
 /* Slider */
 .presentacion {
-    height: 20vh;
-    background-image: url(/img/header2.jpg);
+    height: 40vh;
+    background-image: url(/img/banner_granada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: center 55%;
+    background-position: center 40%;
 }
 
 .presentacion-text {
@@ -103,85 +101,23 @@ ul {
 }
 
 .pt2 {
-    font-size: 30px;
+    margin-top: 50px;
+    font-size: 3em;
     color: #e3e3e3;
 }
 
-/*Formulario de cotización*/
-.content_form {
-    max-width: 800px;
+h6 {
+    font-size: 34px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+/*API de mapa*/
+#map {
+    height: 50vh;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
     margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.form {
-    font-family: 'Calibri';
-    background: #232b2d;
-    color: #fff;
-    padding: 2em;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.form label {
-    display: block;
-}
-
-.form textarea {
-    resize: none;
-}
-
-.form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.form .block {
-    grid-column: 1  / 3;
-}
-
-.form button,
-.form input,
-.form textarea,
-.form select {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #fff;
-    border-bottom: 1px solid var(--color-links);
-}
-
-.form button {
-    background: #042C6E;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.form button:hover,
-.form button:focus {
-    background: var(--color-links);
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
-/*Footer*/
-footer {
-    width: 100%;
-    height: 518px;
-    bottom: 0px;
-}
-
-iframe {
-    width: 100%;
-    height: 520px;
-    border-style: none;
-    margin-bottom: none;
 }

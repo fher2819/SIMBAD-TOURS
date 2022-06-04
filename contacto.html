@@ -49,7 +49,7 @@
                        </ul>
                    </li>
                    <li>
-                       <a href="#">COTIZAR</a>
+                       <a href="cotizar.html">COTIZAR</a>
                    </li>
                 </ul>
                 <a href="#"><img src="img/estados-unidos.png" alt="Idioma Ingles" class="nav-ingles"></a>
@@ -94,7 +94,14 @@
                     </p>
                     <p class="block">
                        <label>Comentario</label> 
-                        <textarea name="message" rows="5"></textarea>
+                       <a href="#modalCamera"><i class="fa-solid fa-camera"></i></a>
+                       <div class="containerComentario">
+
+                           <textarea name="message" rows="5"></textarea>
+                           <div class="containerCanvas">
+                               <canvas id="canvasElement"></canvas>
+                           </div>
+                       </div>
                     </p>
                     <p class="block">
                         <button>
@@ -147,5 +154,21 @@
         </div>
         <h4 class="derechos">Copyright© 2022 Simbad Tours | Diseñado y Desarrollado por Simbad Tours.</h4>
     </footer>
+
+    <div id="modalCamera" class="modalCamera">
+        <div class="contentModal">
+            <div class="divImage">
+                <video id="videoElement" autoplay="true"></video>
+
+            </div>
+            <div class="containerBtn">
+
+                <button id="tomarPhoto">Tomar Foto </button>
+                <a href="#">Regresar</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/camera.js"></script>
 </body>
 </html>

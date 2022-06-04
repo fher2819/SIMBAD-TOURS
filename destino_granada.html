@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuienesSomos-SimbadTours</title>
+    <title>Granada-SimbadTours</title>
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- FONT Bebas Neue-->
@@ -18,9 +17,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!--Personalización CSS-->
-    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/destino_granada.css">
+
+    <script>
+        /** @type {HTMLElement}*/
+        var posElt;
+        /** @type {HTMLElement} */
+        var posLinkElt;
+
+
+        window.addEventListener('load', function(){
+            posElt = document.getElementById('Pos');
+            posLinkElt = document.querySelector('#PosLink > a');
+
+            // if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(geoposOK, geoposKO);
+            // }
+            // else {
+            // }
+        });
+
+        /** @param {GeolocationPosition} pos */
+        function geoposOK(pos) {
+            //Obtenemos latitud y longitud
+            var lat = pos.coords.latitude;
+            var long = pos.coords.longitude;
+            //Mostramos la posición
+            posElt.textContent = `${lat}, ${long}`;
+            //generamos enlace a la posición
+            posLinkElt.href = `https://maps.google.com/?q=${lat},${long}`;
+            posLinkElt.textContent = 'Mostrar tu posición en un mapa';
+        }
+
+        /** @param {GeolocationPositionError} err */
+        function geoposKO(err) {
+            console.warn(err.message);
+            let msg;
+            switch(err.code) {
+                case err.PERMISSION_DENIED:
+                    msg = "No nos has dado permiso para obtener tu posición";
+                    break;
+                case err.POSITION_UNAVAILABLE:
+                    msg = "Tu posición actual no está disponible";
+                    break;
+                 case err.TIMEOUT:
+                     msg = "No se ha podido obtener tu posición en un tiempo prudencial";
+                     break;
+                 default:
+                     msg = "Error desconocido";
+                     break;
+            }
+            posElt.textContent = msg;
+        }
+
+
+    </script>
 </head>
 <body>
+    
     <header class="presentacion">
         <div class="container">
             <nav class="nav-main" id="menu">
@@ -63,60 +117,20 @@
             </nav>
             <hr noshade color="#232b2d">
             <section class="presentacion-text">
-                <h2 class="pt2">¿Quiénes Somos?</h2>
+                <h2 class="pt2">GRANADA</h2>
             </section>
         </div>
     </header>
-    <div class="img-contenido"><img src="img\somos.png" /></div>
-        <div class="contenido">
-            <div class="articulos">
-                <div class="secciones">
-                    <div>
-                        <h1>MISIÓN</h1>
-                        <p>Somos una agencia de viaje con la iniciativa de satisfacer la necesidad de entretenimiento de las familias nicaragüenses con diferentes opciones nacionales. Formando una organización única generando una relación especial entre cada uno de los miembros y nuestro equipo de trabajo.</p>
-                    </div>
-                </div>
-                <div class="secciones">
-                    <div>
-                        <h1>VISIÓN</h1>
-                        <p>Brindar soluciones integrales de turismo dentro y fuera de Nicaragua, que superen  las  expectativas de nuestros selectos clientes y hacer de sus vacaciones  una experiencia inolvidable.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contenido2">
 
-              <div class="secciones2">
-                    
-                        <p>Tenemos la pasión por ser la mejor alternativa de asesoría turística aliada a nuestra exclusiva clientela basándonos en los mejores precios de turismo en el mercado, comprometidos a ofrecer calidad de servicio, atención personalizada  y ahorro en cada una de nuestras tarifas</p>
-                    
-                </div>
-            
-            <div class="seccion3">
-                
-                    <h1>Nuestro Objetivo</h1>
-                    <p>El objetivo es abrir amplias posibilidades vacacionales para vivir momentos especiales en familia, buscando la unión familiar, creando momentos únicos que perduren en el tiempo.</p>
-                
-            </div>
-        </div>
-        
+    <div id="map"></div>
+    <script src="js/api_mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 
-        <div class="BUltim">
-
-
-            <h3>Nuestros</h3>
-            <h4>SERVICIOS</h4>
-            <div class="icono2">
-                <a href="" class="fas fa-hotel"></a>
-                <a href="" class="fas fa-car"></a>
-                <a href="" class="fas fa-briefcase"></a>
-            </div>
-
-        </div>
-
-        
-        <footer class="footer">
-            <iframe src="footer.html" frameborder="0"></iframe>
-        </footer>
+    <div style="width:750px; margin:2em auto;">
+        <h1>Ejemplo de uso de la API de geolocalización</h1>
+        <p>Tu posición es: <span id="Pos">Desconocida</span></p>
+        <p id="PosLink"><a target="_blank"></a></p>
+    </div>
+    
 </body>
 </html>

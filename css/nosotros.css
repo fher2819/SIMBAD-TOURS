@@ -71,6 +71,7 @@ ul {
 }
 
 .nav-main ul li ul {
+    position: absolute;
     display: none;
 }
 .nav-main ul li a:hover + ul, .nav-main ul li ul:hover {
