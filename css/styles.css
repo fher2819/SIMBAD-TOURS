@@ -575,3 +575,9 @@ body {
           opacity: 1;
           pointer-events: auto;
       }
+
+.Mapa{
+    
+    width :400px;
+    height:240px;
+}
