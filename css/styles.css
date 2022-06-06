@@ -294,6 +294,10 @@ ul {
     color: var(--color-links);
 }
 
+#cardDeTemporada, #cardPlayas, #cardDepartamentos{
+    display: none;
+}
+
 /*Sección para suscribirse*/
 .suscribirse {
     background-color: #005493;
