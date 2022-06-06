@@ -8,6 +8,12 @@
     --color-links: #0077DC;
 }
 
+h1 {
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+    color: #042C6E;
+}
+
 h3 {
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
@@ -85,7 +91,7 @@ ul {
 
 /* Slider */
 .presentacion {
-    height: 40vh;
+    height: 20vh;
     background-image: url(/img/banner_granada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +107,7 @@ ul {
 }
 
 .pt2 {
-    margin-top: 50px;
+    
     font-size: 3em;
     color: #e3e3e3;
 }
@@ -112,6 +118,41 @@ h6 {
     color: white;
 }
 
+/*Contenedor del destino*/
+.container_destino {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/*Imagen del lugar*/
+.imagen {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/img/banner_granada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    margin-top: 30px;
+    border-radius: 1em;
+}
+
+/*Descripción del tour*/
+.descripcion {
+    margin-top: 30px;
+}
+
+.descripcion p {
+    font-family: 'Calibri';
+    font-size: 1.5em;
+}
+
+/*Mapa de tour*/
+.mapa-tour {
+    margin-top: 30px;
+}
 /*API de mapa*/
 #map {
     height: 50vh;
@@ -120,4 +161,112 @@ h6 {
     margin-right: auto;
     margin-top: 30px;
     border-radius: 10px;
+}
+
+/*Estilos de la galeria*/
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.gallery-item:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.gallery-item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.gallery-item:nth-child(9) {
+    grid-column-start: span 2;
+}
+
+@media (min-width:768px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery-item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+    .gallery-item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+    .gallery-item:nth-child(5) {
+        grid-row-start: span 3;
+    }
+    .gallery-item:nth-child(9) {
+        grid-column-start: span 3;
+    }
+}
+
+@media (min-width:1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gallery-item:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    .gallery-item:nth-child(4) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+}
+
+/*Itinerario*/
+.box-acordion {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+.acordion {
+    display: block;
+    background-color: #2874A6;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 20px;
+    border-bottom: 1px solid #1f618D;
+    border-radius: 0.5em;
+}
+
+.activo,
+.acordion:hover {
+    background-color: #1f618D;
+}
+
+.contenido {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: justify;
+    font-family: arial;
+    font-size: 17px;
+    display: none;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 518px;
+    bottom: 0px;
+}
+
+iframe {
+    width: 100%;
+    height: 520px;
+    border-style: none;
+    margin-bottom: none;
 }

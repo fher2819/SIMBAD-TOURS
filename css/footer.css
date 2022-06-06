@@ -40,8 +40,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 40px 50px;
     border-radius: 50px;
-    background-color: #000000;
-    opacity: 0.85;
+    background-color: rgba(0,0,0,.85);;
 }
 
 .logo-footer {

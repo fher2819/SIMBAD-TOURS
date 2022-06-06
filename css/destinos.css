@@ -151,6 +151,7 @@ ul {
 
 /*Cards de todos los destinos*/
 .cards {
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -169,6 +170,7 @@ ul {
 .cards #imagen img {
     width: 200%;
     height: 100%;
+    object-fit: cover;
     transition: 2s;
 }
 
