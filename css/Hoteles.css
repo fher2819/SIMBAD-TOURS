@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h3 {
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    color: #042C6E;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.container {
+    background: url(/img/fondoM.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+}
+
+/* Navegación */
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    width: 50px;
+}
+
+.nav-ingles {
+    width: 20px;
+}
+
+.nav-español {
+    width: 20px;
+}
+
+/* Nav izquierda*/
+.nav-main ul {
+    display: flex;
+}
+
+    .nav-main ul li {
+        padding: 10px;
+    }
+
+        .nav-main ul li a:hover {
+            border-bottom: 2px solid #000000;
+        }
+
+    .nav-main ul.nav-menu {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+h6 {
+    font-size: 34px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+}
+/*Detalle*/
+.ContDescrpcion{
+ 
+    margin-top: 5%;
+
+    width: 100%;
+    height: auto;
+}
+.ImagenDes{
+    margin-left: 15%;
+    width: 70%;
+    height: 60%;
+
+}
+.ImagenDes img{
+    width: 100%;
+    height: 100%;
+}
+.Des{
+    
+    margin-top: 2%;
+    margin-left: 15%;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+.Des p{
+    
+    font-size: 25px;
+
+}
+.ContDetalle{
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.Deta{
+    margin: 3%;
+    justify-content: space-evenly;
+    display: flex;
+    width: 90%;
+    height:  33.3%;
+}
+
+.ImagenHab{
+    width: 50%;
+    height: 100%;
+}
+.ImagenHab img{
+    height: 100%;
+    width: 100%;
+}
+.Descp{
+    padding-left: 3%;
+    width: 50%;
+    height: 100%;
+}
+.Descp h2{
+    font-size: 45px;
+
+}
+.Descp p{
+    margin-top: 3%;
+    font-size: 25px;
+}
