@@ -109,24 +109,24 @@ ul {
 
 /*Detalle*/
 .ContDescrpcion{
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5%;
-
     width: 100%;
-    height: 1000px;
+    height: auto;
 }
 .ImagenDes{
-    margin-left: 15%;
+    
     width: 70%;
     height: 60%;
-
 }
 .ImagenDes img{
     width: 100%;
     height: 100%;
 }
 .Des{
-    margin-left: 15%;
+    
     display: flex;
     width: 70%;
     justify-content: center;
@@ -138,7 +138,7 @@ ul {
 
 .ContDetalle{
     width: 75%;
-    height: 1200px;
+    height: auto;
     margin-top: 5%;
     margin-left: 13%;
 }
@@ -160,8 +160,8 @@ ul {
 }
 
 .Imagem{
-    width: 100%;
-    height: 30%;
+    width: 20%;
+    height: 10%;
 }
 
 .Imagem img{
@@ -175,7 +175,6 @@ ul {
 }
 .DetalleVehiculo{
     margin-top: 5%;
-    
     width: 100%;
     height: 30%;
 }
@@ -197,6 +196,7 @@ ul {
 }
 
 .DtVH{
+    padding-top: 5%;
     width: 100%;
     height: 30%;
     margin-top: 3%;
@@ -221,16 +221,19 @@ ul {
 }
 
 .Tipo{
+    padding-left: 10%;
     align-items: center;
     display: flex;
     width: 50%;
     height: 100%;
 }
-
+.des a{
+    font-size: 30px;
+}
 .des{
     align-items: center;
     display: flex;
-    width: 505;
+    width: 50%;
     height: 100%;
 }
 .des h2{
@@ -239,12 +242,12 @@ ul {
 .des1{
     align-items: center;
     display: flex;
-    width: 505;
+    width: 50%;
     height: 100%;
 }
 .ico{
-    width: 40%;
-    height: 40%;   
+    width: 20%;
+    height: 30%;   
 }
 
 .des1 img{
@@ -252,10 +255,10 @@ ul {
     height: 100%;
 }
 .DtVH h2{
-    font-size: 20px;
+    font-size: 30px;
 }
 .DtVH h3{   
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /*Carrucel*/
@@ -323,7 +326,7 @@ ul {
 }
 
 .lin{
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     border: solid 2px;
 }
 
