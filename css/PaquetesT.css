@@ -230,6 +230,9 @@ ul {
     .login-container {
         width: 70%;
         margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
 
     .login-info-container {
@@ -245,6 +248,9 @@ ul {
 @media screen and (max-width: 650px) {
     .login-container {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
 }
 

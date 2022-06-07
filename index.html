@@ -23,6 +23,13 @@
 </head>
 <body>
 
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+        diameter: 56,
+        backgroundColor: 'rgb(40, 116, 166)',
+        textColor: '#fff'
+    })</script>
+
     <header class="presentacion">
         <ul class="slider">
             <li class="img1"></li>
@@ -48,9 +55,9 @@
                    <li>
                        <a href="prueba.html">SERVICIOS</a>
                        <ul>
-                            <li><a href="">Renta de autos</a></li>
-                            <li><a href="">Hotel</a></li>
-                            <li><a href="">Paquetes Turísticos</a></li>
+                            <li><a href="RentaAuto.html">Renta de autos</a></li>
+                            <li><a href="Hoteles.html">Hotel</a></li>
+                            <li><a href="PaquetesT.html">Paquetes Turísticos</a></li>
                         </ul>
                    </li>
                    <li>
@@ -110,16 +117,16 @@
             <nav class="nav-categorias">
                 <ul class="nav-categorias-menu">
                     <li>
-                        <a href="#">SEMANA SANTA</a>
+                        <a href="#categorias" onclick="show('cardSemanaSanta')">SEMANA SANTA</a>
                     </li>
                     <li>
-                        <a href="#">DE TEMPORADA</a>
+                        <a href="#categorias" onclick="show('cardDeTemporada')">DE TEMPORADA</a>
                     </li>
                     <li>
-                        <a href="#">PLAYAS</a>
+                        <a href="#categorias" onclick="show('cardPlayas')">PLAYAS</a>
                     </li>
                     <li>
-                        <a href="#">DEPARTAMENTOS</a>
+                        <a href="#categorias" onclick="show('cardDepartamentos')">DEPARTAMENTOS</a>
                     </li>
                 </ul>
             </nav>
@@ -128,27 +135,108 @@
                 <h1 class="titulo-categoria">SEMANA SANTA</h1>
                 <a href="#" class="mas">Ver más ofertas</a>
             </section>
-            <div class="cards">
+            <div class="cards" id="cardSemanaSanta">
                 <div>
                     <figure id="imagen">
                         <img src="img/Leon.jpg" alt="card1">
                     </figure>
                     <h3>León</h3>
-                    <p><a href="#">Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de las más antiguas... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                    <p><a href="destino_granada.html">Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de
+                            las más antiguas... Ver más <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
                 <div>
                     <figure id="imagen">
                         <img src="img/Granada.jpg" alt="card2">
                     </figure>
                     <h3>Granada</h3>
-                    <p><a href="#">La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                    <p><a href="destino_granada.html">La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes... Ver más
+                            <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
                 <div>
                     <figure id="imagen">
                         <img src="img/Masaya.jpg" alt="card3">
                     </figure>
                     <h3>Masaya</h3>
-                    <p><a href="#">Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del folcklore de niacaragua... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                    <p><a href="destino_granada.html">Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del
+                            folcklore de niacaragua... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+            </div>
+            <div class="cards" id="cardDeTemporada">
+                <div>
+                    <figure id="imagen">
+                        <img src="img/fondoDestinos.jpg" alt="card1">
+                    </figure>
+                    <h3>León</h3>
+                    <p><a href="destino_granada.html">Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de
+                            las más antiguas... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/header5.jpg" alt="card2">
+                    </figure>
+                    <h3>Granada</h3>
+                    <p><a href="destino_granada.html">La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes... Ver más
+                            <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/complemento.jpg" alt="card3">
+                    </figure>
+                    <h3>Masaya</h3>
+                    <p><a href="destino_granada.html">Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del
+                            folcklore de niacaragua... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+            </div>
+            <div class="cards" id="cardPlayas">
+                <div>
+                    <figure id="imagen">
+                        <img src="img/header6.jpg" alt="card1">
+                    </figure>
+                    <h3>León</h3>
+                    <p><a href="destino_granada.html">Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de
+                            las más antiguas... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/fondoS1.jpg" alt="card2">
+                    </figure>
+                    <h3>Granada</h3>
+                    <p><a href="destino_granada.html">La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes... Ver más
+                            <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/header3.jpg" alt="card3">
+                    </figure>
+                    <h3>Masaya</h3>
+                    <p><a href="destino_granada.html">Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del
+                            folcklore de niacaragua... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+            </div>
+            <div class="cards" id="cardDepartamentos">
+                <div>
+                    <figure id="imagen">
+                        <img src="img/D1.jpg" alt="card1">
+                    </figure>
+                    <h3>León</h3>
+                    <p><a href="destino_granada.html">Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de
+                            las más antiguas... Ver más <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/D2.jpg" alt="card2">
+                    </figure>
+                    <h3>Granada</h3>
+                    <p><a href="destino_granada.html">La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes... Ver más
+                            <i class="fas fa-angle-double-right"></i></a></p>
+                </div>
+                <div>
+                    <figure id="imagen">
+                        <img src="img/D3.jpg" alt="card3">
+                    </figure>
+                    <h3>Masaya</h3>
+                    <p><a href="destino_granada.html">Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del
+                            folcklore de niacaragua... Ver más <i class="fas fa-angle-double-right"></i></a></p>
                 </div>
             </div>
         </section>
@@ -176,37 +264,37 @@
             <img src="img/Leon.jpg" alt="card4">
             <h3>León</h3>
             <p>Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de las más antiguas...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div>
             <img src="img/Granada.jpg" alt="card5">
             <h3>Granada</h3>
             <p>La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div>
             <img src="img/Masaya.jpg" alt="card6">
             <h3>Masaya</h3>
             <p>Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del folcklore de niacaragua...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div>
             <img src="img/Leon.jpg" alt="card7">
             <h3>León</h3>
             <p>Declarada Patrimonio de la Humanidad por la UNESCO. Una ciudad colonial, también de las más antiguas...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div>
             <img src="img/Granada.jpg" alt="card8">
             <h3>Granada</h3>
             <p>La Gran Sultana es la ciudad turìstica por excelencia de Nicaragua. Puedes...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div>
             <img src="img/Masaya.jpg" alt="card9">
             <h3>Masaya</h3>
             <p>Esta pequeña ciudad, a tan solo 30 minutos del sur de la capital es la cuna del folcklore de niacaragua...</p>
-            <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            <a href="destino_granada.html">Ver más <i class="fas fa-angle-double-right"></i></a>
         </div>
     </section>
     <section class="all_dest">
@@ -233,8 +321,7 @@
                 <h2>UBICACIÓN</h2>
                 <p><i class="fas fa-location-dot"></i> Camino de Oriente</p>
                 <br>
-                <div class="Mapa" id="map"></div>
-                <iframe src="" width="400" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="ma"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0198208776815!2d-86.25769898570296!3d12.110795536458253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe20ebe78887%3A0x2875e490b77285c8!2sCamino%20Oriente%2C%20Managua!5e0!3m2!1ses-419!2sni!4v1652308444926!5m2!1ses-419!2sni" width="400" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
                 <h2>CONTÁCTANOS</h2>
@@ -260,6 +347,6 @@
         </div>
         <h4 class="derechos">Copyright© 2022 Simbad Tours | Diseñado y Desarrollado por Simbad Tours.</h4>
     </footer>
-    
+    <script src="/js/changeDiv.js"></script>
 </body>
 </html>

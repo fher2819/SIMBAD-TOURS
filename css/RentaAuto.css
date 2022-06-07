@@ -1,9 +1,14 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root{
+    --color-links: #0077DC;
+}
 
 h3 {
     font-size: 24px;
@@ -25,11 +30,8 @@ ul {
     list-style: none;
 }
 
-
 .container {
-    background: url(/img/fondoM.png) no-repeat;
-    background-size: cover;
-    width: 100%;
+    width: 98%;
     margin: auto;
 }
 
@@ -60,25 +62,51 @@ ul {
     display: flex;
 }
 
-    .nav-main ul li {
-        padding: 10px;
-    }
-
-        .nav-main ul li a:hover {
-            border-bottom: 2px solid #000000;
-        }
-
-    .nav-main ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-h6 {
-    font-size: 34px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    text-align: center;
+.nav-main ul li a{
+    padding: 10px;
+    display: block;
 }
+
+.nav-main ul li a:hover {
+    background-color: #232b2d;
+    color: var(--color-links);
+}
+
+.nav-main ul li ul {
+    position: absolute;
+    display: none;
+}
+.nav-main ul li a:hover + ul, .nav-main ul li ul:hover {
+    display: block;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Slider */
+.presentacion {
+    height: 20vh;
+    background-image: url(/img/header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center 55%;
+}
+
+.presentacion-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.pt2 {
+    font-size: 30px;
+    color: #e3e3e3;
+}
+
 /*Detalle*/
 .ContDescrpcion{
  
@@ -297,4 +325,18 @@ h6 {
 .lin{
     margin-bottom: 20%;
     border: solid 2px;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 518px;
+    bottom: 0px;
+}
+
+iframe {
+    width: 100%;
+    height: 520px;
+    border-style: none;
+    margin-bottom: none;
 }

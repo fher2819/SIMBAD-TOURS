@@ -17,6 +17,8 @@ h3 {
 body {
     font-size: 16px;
     font-family: 'Bebas Neue', cursive;
+    background-color: #051336;
+    color: #fff;
 }
 
 a {
@@ -31,6 +33,8 @@ ul {
 .container {
     width: 98%;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 
 /* Navegación */
@@ -85,24 +89,74 @@ ul {
 
 /* Slider */
 .presentacion {
-    height: 20vh;
-    background-image: url(/img/header3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center 72%;
+    height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
 }
 
 .presentacion-text {
-    display: flex;
-    justify-content: space-around;
+    text-align: right;
+    float: right;
+    margin-right: 50px;
     align-items: center;
-    margin: 15px 0;
+    margin-top: 30px;
+    width: 30%;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.separador {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0077DC;
+    border-radius: 5px;
+    height: 5px;
+}
+
+.presentacion-text p {
+    font-family: 'Calibri';
+    color: #fff;
+    margin: 10px 0;
 }
 
 .pt2 {
     font-size: 30px;
     color: #e3e3e3;
+}
+
+.presentacion-text button{
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    background-color: #0077DC;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.sus:hover, .sus:focus {
+    cursor: pointer;
 }
 
 /*Contenido M y V*/
@@ -118,39 +172,87 @@ ul {
     box-sizing: border-box;
 }*/
 
-.img-contenido img {
-    width: 100%;
-    height: 100%;
-}
 .img-contenido {
-    padding-top: 8%;
-    padding-right: 5%;
-    width:25%;
-    height: 5%;
-    
-   
-    float: right;
-   
-    /*vertical-align: middle;*/
-    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-image: url(/img/somos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    border-radius: 1em;
+}
+
+.img-contenido2 {
+    width: 50%;
+    height: 300px;
+    background-image: url(/img/header5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    border-radius: 1em;
+}
+
+.img-contenido3 {
+    width: 50%;
+    height: 300px;
+    background-image: url(/img/pareja-de-turistas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    border-radius: 1em;
 }
 
 .contenido {
-    display: flex;
-    margin: 90px;
-    text-align: left;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Calibri';
 }
 .articulos {
-    width: 70%;
-    border-right: 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.secciones {
-    display: flex;
-    align-items: center;
-    padding: 40px;
+.secciones1 {
+    padding: 1em 1em;
 }
 
-/*Segundo contenido*/
+.s2 {
+    text-align: right;
+}
+
+.secciones {
+    padding: 1em 1em;
+}
+
+.secciones div {
+    padding: 1em;
+}
+
+.secciones h1{
+    margin-top: 1em;
+}
+
+.secciones p{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+/*Segundo contenido
 .contenido2 {
  
     height: 200px;
