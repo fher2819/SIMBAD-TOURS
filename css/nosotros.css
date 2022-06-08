@@ -227,6 +227,11 @@ video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.articulos2 {
+    display: none;
+}
+
 .secciones1 {
     padding: 1em 1em;
 }
@@ -311,6 +316,7 @@ video {
 .BUltim a{
     font-size: 80px;
     margin-left: 5%;
+    color: white;
 }
 .BUltim h3{
     padding-top: 2%;
@@ -320,7 +326,7 @@ video {
     font-size: 50px;
 }
 .BUltim h3, h4 {
-    color: rgba(10,46,109,255);
+    color: #f77913f1;
     text-align: center;
 }
 
@@ -345,3 +351,36 @@ iframe {
     border-style: none;
     margin-bottom: none;
 }
+
+/****Resposive*****/
+
+@media (max-width: 800px){
+
+    .articulos{
+        display: none;
+    }
+
+    .articulos2{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .BUltim h4{
+        font-size: 35px;
+    }
+
+
+    .BUltim a{
+        font-size: 50px;
+    }
+
+    .presentacion-text{
+        width: 80%;
+        
+    }
+
+
+    }
