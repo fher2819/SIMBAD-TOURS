@@ -118,7 +118,7 @@ ul {
 }
 .ImagenDes{
     
-    width: 70%;
+    width: 90%;
     height: 60%;
 }
 .ImagenDes img{
@@ -127,11 +127,11 @@ ul {
 }
 .Des{
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: center;
 }
 .Des p{
-    font-size: 25px;
+    font-size: 50px;
 }
 
 .ContDetalle{
@@ -145,7 +145,7 @@ ul {
 }
 
 .VehiculoDeta{
-    width: 75%;
+    width: 90%;
     height: 100%;
 }
 
@@ -157,7 +157,7 @@ ul {
 
 .Titulo h2{
     margin-left: 10%;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .Imagem{
@@ -256,10 +256,10 @@ ul {
     height: 100%;
 }
 .DtVH h2{
-    font-size: 30px;
+    font-size: 50px;
 }
 .DtVH h3{   
-    font-size: 30px;
+    font-size: 50px;
 }
 
 /*Carrucel*/
