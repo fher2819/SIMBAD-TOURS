@@ -878,4 +878,18 @@ body {
 
 }
 
+@media screen and (max-width: 1920px) {
+
+    #modalPaquete .form-register{
+        margin-top: 7%;
+    }
+    #modalPaquete .imgContainer {
+        height: 40vh;
+        width: 18vw;
+    }
+}
+
+
+
+
 /*#endregion */
