@@ -71,6 +71,9 @@
     padding-right: 1rem;
 }
 
+#nav-toggle:checked + .slidebar{
+    width: 70px;
+}
 
 
 .main-content {
@@ -87,6 +90,10 @@ header {
     width: 75%;
     top: 0;
     z-index: 100;
+}
+
+#nav-toggle{
+    display: none;
 }
 
 header h2 {
@@ -303,3 +310,4 @@ tr td:last-child{
     margin-left: .5rem;
     color: var(--main-color);
 }
+
